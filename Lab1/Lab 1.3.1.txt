@@ -1,0 +1,11 @@
+#include <iostream>
+#include <iomanip>
+#include <string>
+int main()
+{
+int v=10800; 
+int min3=3*60;//  value of 3 minutes in seconds
+int min5=5*60;// value of 5 minutes in seconds
+float pi =3.141526; 
+std::cout << "result: " << v << std::endl;
+}

@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int main(void) {
+float a1,a2,a3,a4,a5;
+cout << "a1:  ";
+cin >> a1;
+cout << "a2:  ";
+cin >> a2;
+cout << "a3:  ";
+cin >> a3;
+cout << "a4:  ";
+cin >> a4;
+printf("%.1f", a1);
+cout<< endl;
+printf("%.2f",a2);
+cout<< endl;
+cout<< a3;
+cout<< endl;
+printf("%.2f",a4);
+return 0;
+}
