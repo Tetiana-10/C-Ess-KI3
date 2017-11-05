@@ -1,0 +1,26 @@
+#include <iostream>
+#include <string>
+#include <stdarg.h>
+using namespace std;
+void increment(int var, ...)
+{
+   int *n = &var;
+   va_list args;
+   va_start(args, var);
+   int expr = va_arg(args, int);
+   if(expr>0 && expr<675284896){
+       *n=var+expr;
+       }else{
+           *n=var+1;
+           }
+}
+int main(void) {
+int var = 0;
+for(int i = 0; i < 10; i++)
+if(i % 2)
+increment(var);
+else
+increment(var,i);
+cout << var << endl;
+return 0;
+}
